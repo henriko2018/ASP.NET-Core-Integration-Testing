@@ -15,10 +15,17 @@ namespace WebApp30.Tests
 		}
 
 		[Fact]
-		public async Task Test1()
+		public async Task Returns_OK()
 		{
 			var response = await _testHostFixture.Client.GetAsync("/Home/Index");
 			Assert.Equal(HttpStatusCode.OK, response.StatusCode);
+		}
+
+		[Fact]
+		public async Task Uses_settings_from_WebApp()
+		{
+			var response = await _testHostFixture.Client.GetStringAsync("/Home/Index");
+			Assert.Contains("Value from WebApp", response);
 		}
 	}
 }
