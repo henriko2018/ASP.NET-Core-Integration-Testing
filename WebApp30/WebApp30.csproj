@@ -4,9 +4,9 @@
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <RootNamespace>WebApp30</RootNamespace>
   </PropertyGroup>
-
-
+  <!--
   <ItemGroup>
+    <EmbeddedResource Include="Views\**\*.cshtml" />
   </ItemGroup>
-
+  -->
 </Project>

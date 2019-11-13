@@ -9,7 +9,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp30", "WebApp30\WebApp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp30.Tests", "WebApp30.Tests\WebApp30.Tests.csproj", "{2ECFD02B-7A13-4725-A23E-F7566AE5AEDC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApp22.Tests", "WebApp22.Tests\WebApp22.Tests.csproj", "{60FD19DF-273A-41BA-8B58-98CE2DD94DDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WebApp22.Tests", "WebApp22.Tests\WebApp22.Tests.csproj", "{60FD19DF-273A-41BA-8B58-98CE2DD94DDD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3A7C0535-743D-4E7E-9E2B-3C89F93CBCEA}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

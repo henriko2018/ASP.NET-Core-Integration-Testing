@@ -1,4 +1,4 @@
-using System.Net;
+﻿using System.Net;
 using System.Threading.Tasks;
 using Xunit;
 
@@ -22,10 +22,17 @@ namespace WebApp22.Tests
 		}
 
 		[Fact]
-		public async Task Uses_settings_from_WebApp()
+		public async Task Uses_settings_from_test()
 		{
 			var response = await _testHostFixture.Client.GetStringAsync("/Home/Index");
-			Assert.Contains("Value from WebApp", response);
+			Assert.Contains("Value from test", response);
+		}
+
+		[Fact]
+		public async Task Uses_test_service_implementation()
+		{
+			var response = await _testHostFixture.Client.GetStringAsync("/Home/Index");
+			Assert.Contains("TestImpl", response);
 		}
 	}
 }
